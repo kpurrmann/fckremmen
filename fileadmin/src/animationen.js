@@ -1,51 +1,51 @@
-// Animationen für Goldrausch
+// Animationen fï¿½r Goldrausch
 
 $(document).ready(function() {
 
-	/* MENUFÜHRUNG */
-	var inter = 0;
-		
-	$('#menu li a.main').mouseover(function() {
-		var i = $('#menu li a').index(this);		
-		$('div.aktiv').removeClass('aktiv');
-		$('#submenu:hidden').slideDown();
-		$('div.col-' + (i+1)).addClass('aktiv');		
-		$('#menu img').removeClass('einfahren');
-		$('#menu img').addClass('ausfahren');			
-		clearInterval(inter);
-		return false;
-	});
-	
-	$('#menu img').click(function() {
-		if($('#submenu').css('display') == 'block') {
-			$('#submenu').slideUp();
-			$(this).removeClass('ausfahren');
-			$(this).addClass('einfahren');			
-		} else {
-			$('#submenu').slideDown();
-			$(this).removeClass('einfahren');
-			$(this).addClass('ausfahren');			
-		}
-	});
-	
-	$('#menu a').click(function() {
-		return true ;
-	});
-	
-	$('#submenu a').click(function() {
-		return true ;
-	});
-
-	$('#submenu > div').mouseover(function() {
-		$('div.aktiv').removeClass('aktiv');										   
-		$(this).addClass('aktiv');				
-	});
-	
-	$('#menu').mouseleave(function() {
-		$('#submenu').slideUp();
-		$('#menu img').removeClass('ausfahren');
-		$('#menu img').addClass('einfahren');	
-	});
+//	/* MENUFï¿½HRUNG */
+//	var inter = 0;
+//
+//	$('#menu li a.main').mouseover(function() {
+//		var i = $('#menu li a').index(this);
+//		$('div.aktiv').removeClass('aktiv');
+//		$('#submenu:hidden').slideDown();
+//		$('div.col-' + (i+1)).addClass('aktiv');
+//		$('#menu img').removeClass('einfahren');
+//		$('#menu img').addClass('ausfahren');
+//		clearInterval(inter);
+//		return false;
+//	});
+//
+//	$('#menu img').click(function() {
+//		if($('#submenu').css('display') == 'block') {
+//			$('#submenu').slideUp();
+//			$(this).removeClass('ausfahren');
+//			$(this).addClass('einfahren');
+//		} else {
+//			$('#submenu').slideDown();
+//			$(this).removeClass('einfahren');
+//			$(this).addClass('ausfahren');
+//		}
+//	});
+//
+//	$('#menu a').click(function() {
+//		return true ;
+//	});
+//
+//	$('#submenu a').click(function() {
+//		return true ;
+//	});
+//
+//	$('#submenu > div').mouseover(function() {
+//		$('div.aktiv').removeClass('aktiv');
+//		$(this).addClass('aktiv');
+//	});
+//
+//	$('#menu').mouseleave(function() {
+//		$('#submenu').slideUp();
+//		$('#menu img').removeClass('ausfahren');
+//		$('#menu img').addClass('einfahren');
+//	});
 	
 	/* TEASER */	
 	var intTimeout = 0;

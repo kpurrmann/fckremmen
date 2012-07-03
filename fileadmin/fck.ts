@@ -272,6 +272,7 @@ page.10 {
 			wrap >
 			expAll = 0
 			noBlur = 1
+			NO.doNotLinkIt = 1
 			NO.ATagParams = class="main"						
 			NO.ATagTitle.field = header // title // subtitle // alias			
 			NO.wrapItemAndSub = <li>|</li>
@@ -337,6 +338,34 @@ page.10 {
 			NO.wrapItemAndSub = <li>|</li>
 		}
 	}	
+	subparts.SUBMENU_MEDIEN = HMENU
+	subparts.SUBMENU_MEDIEN {
+		special = directory
+		special.value = 10
+		1 = TMENU
+		1 {
+			wrap >
+			expAll = 0
+			noBlur = 1
+			ATagParams = 1
+			NO.ATagTitle.field = header // title // subtitle // alias
+			NO.wrapItemAndSub = <li>|</li>
+		}
+	}
+	subparts.SUBMENU_FANSHOP = HMENU
+	subparts.SUBMENU_FANSHOP {
+		special = list
+		special.value = 113
+		1 = TMENU
+		1 {
+			wrap >
+			expAll = 0
+			noBlur = 1
+			ATagParams = 1
+			NO.ATagTitle.field = header // title // subtitle // alias
+			NO.wrapItemAndSub = <li>|</li>
+		}
+	}
 	
 	subparts.SUBMENU = HMENU
 	subparts.SUBMENU {
@@ -373,7 +402,24 @@ page.10 {
 			required = 1
 		}
 
+	}
+	subparts.CONTENT >
+	subparts.CONTENT = COA
+	subparts.CONTENT {
+		10 = CONTENT
+		10 {
+			wrap = <div class="teaser-wrap-left">|</div>
+			table = tt_content
+			select {
+				pidInList = 2
+				where =  colPos = 0
+				begin = 0
+				max = 1
+			}
 		}
-	}	
+		20 < .10
+		20.wrap = <div class="teaser-wrap-right">|</div>
+		20.select.begin = 1
+	}
 }
 [global]

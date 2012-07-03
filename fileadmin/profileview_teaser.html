@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!--
+		IMPORTANT: The stylesheet link below is only for testing the template file directly in a browser while editing it.
+		On the website the css styles for tt_news have to be include with the static TS template "default CSS style (tt_news)" or
+		with an external file (see tt_news/res/tt_news_v2_styles.css) which you include via TypoSript in the "page" object.
+
+ -->
+	<title>Profile example template</title>
+    <link href="../res/profile_stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!-- ###PROFILE_LIST### begin-->
+<div id="cfcleague-profilelist">
+
+<table class="cfcleague-profilelist-pagertable">
+<tr><td colspan="3" class="cfcleague-profilelist-pager">
+<!-- ###CHARBROWSER### begin-->
+<span class="cfcleague-profilelist-pagerlink">###PB_ITEM_LINK######PB_ITEM######PB_ITEM_LINK###</span>
+<span class="cfcleague-profilelist-pagersize">###PB_ITEM_LINK###(###PB_ITEM_SIZE###)###PB_ITEM_LINK###</span>
+<!-- ###CHARBROWSER### end-->
+</td></tr>
+
+<!-- ###PROFILES### start-->
+<!-- ###PROFILE### start-->
+<tr>
+  <td>###PROFILE_SHOWPROFILELINK######PROFILE_LAST_NAME###, ###PROFILE_FIRST_NAME######PROFILE_SHOWPROFILELINK### ###PROFILE_FIRST_PICTURE_IMGTAG###</td>
+  <td>###PROFILE_BIRTHDAY###</td>
+  <td>###PROFILE_SUMMARY###</td>
+</tr>
+<!-- ###PROFILE### end-->
+
+<!-- ###PAGEBROWSER### START -->
+<tr><td colspan="3" class="cfcleague-profilelist-pager">
+<div class="t3sports-pagebrowser">
+###PAGEBROWSER_CURRENT_PAGE###
+Seite ###PAGEBROWSER_CURRENT_PAGE_NUMBER###
+###PAGEBROWSER_CURRENT_PAGE###
+
+###PAGEBROWSER_NORMAL_PAGE###
+###PAGEBROWSER_NORMAL_PAGE_LINK###Seite ###PAGEBROWSER_NORMAL_PAGE_NUMBER### ###PAGEBROWSER_NORMAL_PAGE_LINK###
+###PAGEBROWSER_NORMAL_PAGE###
+
+###PAGEBROWSER_PREV_PAGE###
+&nbsp;###PAGEBROWSER_PREV_PAGE_LINK###<###PAGEBROWSER_PREV_PAGE_LINK###&nbsp;
+###PAGEBROWSER_PREV_PAGE###
+
+###PAGEBROWSER_NEXT_PAGE###
+&nbsp;###PAGEBROWSER_NEXT_PAGE_LINK###>###PAGEBROWSER_NEXT_PAGE_LINK###&nbsp;
+###PAGEBROWSER_NEXT_PAGE###
+
+###PAGEBROWSER_FIRST_PAGE###
+###PAGEBROWSER_FIRST_PAGE_LINK### |< ###PAGEBROWSER_FIRST_PAGE_LINK###
+###PAGEBROWSER_FIRST_PAGE###
+
+###PAGEBROWSER_LAST_PAGE###
+###PAGEBROWSER_LAST_PAGE_LINK### >| ###PAGEBROWSER_LAST_PAGE_LINK###
+###PAGEBROWSER_LAST_PAGE###
+
+</div>
+</td></tr>
+<!-- ###PAGEBROWSER### END -->
+
+<!-- ###PROFILES### end-->
+
+<tr><td colspan="3" class="cfcleague-profilelist-pager">
+<!-- ###CHARBROWSER### begin-->
+<span class="cfcleague-profilelist-pagerlink">###PB_ITEM_LINK######PB_ITEM######PB_ITEM_LINK###</span>
+<span class="cfcleague-profilelist-pagersize">###PB_ITEM_LINK###(###PB_ITEM_SIZE###)###PB_ITEM_LINK###</span>
+<!-- ###CHARBROWSER### end-->
+</td></tr>
+
+</table>
+</div>
+<!-- ###PROFILE_LIST### end-->
+
+
+
+
+
+
+
+<!-- ###PROFILE_VIEW### begin -->
+
+<div class="bild">
+	###PROFILE_FIRSTPICTURE### 
+    <br class="clear" />
+<!--<div class="trikot">
+    	<h1 class="nummer">10</h1>
+     </div>
+-->
+</div>
+<div class="steckbrief"><h2>###PROFILE_FIRST_NAME### ###PROFILE_LAST_NAME###</h2>
+<p>Position: ###PROFILE_POSITION###<br />Geburtstag: ###PROFILE_BIRTHDAY### <br /> im Verein seit ###PROFILE_START_OF_CONTRACT###</p>
+                        
+                        
+                    </div>
+                    <br class="clear" />
+<!-- ###PROFILE_VIEW### end-->
+
+</body>
+</html>

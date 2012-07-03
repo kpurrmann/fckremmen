@@ -1,0 +1,213 @@
+*, html, body { margin:0; padding:0; border:none; }
+body { background:#FFF url(../img/bg.png) repeat-x ; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; line-height:145%; }
+ul { list-style:none; }
+a { color:#585858; }
+a:hover { text-decoration:none; color:#A2A2A2; }
+h1, h2 { margin:0 0 8px 0;  }
+h1 { margin: 0 0 20px 0; }
+p { margin:0 0 10px 0; }
+table { width:100%; margin:0 0 10px 0; }
+tr { padding:0 5px 0 0; }
+td { padding:2px 0 2px 10px; text-align:left; }
+thead { font-weight:bold; text-align:left; }
+th { padding:0 0 0 10px; }
+
+/* AUFTEILUNG */
+#shadow { position:relative; width:1008px; background: url(../img/shadow.png) repeat-y 998px 0; min-height:800px; padding:0; margin: 5px 0 0 0; } 
+#wrapper { position:relative; width:978px; background:#FFF; min-height:800px; padding:10px 10px 30px 10px ; margin:0; overflow:hidden; }
+#header { position:relative; background:#FFF url(../img/bg_header.png) top left repeat-x; height:100px; width:100%; margin:0 0 10px 0; padding:10px 0 0;}
+#content-left { position:relative; float:left; width:705px; margin:0 10px 0 0; background:#FFF; min-height:300px; }
+#content-right { position:relative; float:left; width:263px; background: #FFF; margin:0; min-height:300px; }
+
+/* HEADER */
+#header h1, #header h2 { display:none; }
+.wappen { margin:0 0 0 10px; }
+.right { position:absolute; top:0; right:0; height:107px; width:100%;  }
+.right a { font-size:25px; padding:30px 10px 0 0; text-decoration:none; font-weight:bold; color:#A33333; display:block; position:absolute; right:20px; bottom:20px; }
+
+/* MENUES */
+#menu, #submenu { padding:0; }
+#menu { position:relative; min-height:23px; width:100%; background:url(../img/bg_menu.png) repeat-x; color:#FFF; font-size:15px; margin:0 0 10px 0;}
+#menu ul { margin:0 10px ; padding:0; }
+#menu li { display:inline-block; margin:2px 0 0 0; width:159px; }
+#menu a { color:#FEFEFE; text-decoration:none; }
+#menu a:hover { color:#A9A9A9; text-decoration:underline; }
+
+/* SUBMENUES */
+#menu #submenu { position:relative; background:url(../img/bg_submenu.png) repeat-x 0 -1px; height:147px; width:100%; font-size:13px; display:none; }
+#menu #submenu ul { margin:5px 0px; padding:0; width:120px; display: block; }
+#menu #submenu li { line-height:115%; }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 { width:149px; height:100%; margin:8px 0 0; border-top:1px dashed #A9A9A9;  }
+#menu .col-1 a, #menu .col-2 a, #menu .col-3 a, #menu .col-4 a, #menu .col-5 a, #menu .col-6 a { color:#A9A9A9; text-decoration:none; }
+#menu .col-1 a:hover, #menu .col-2 a:hover, #menu .col-3 a:hover, #menu .col-4 a:hover, #menu .col-5 a:hover, #menu .col-6 a:hover { color:#FEFEFE; text-decoration:underline; }
+.col-1.aktiv, .col-2.aktiv, .col-3.aktiv, .col-4.aktiv, .col-5.aktiv, .col-6.aktiv { background:#FFF url(../img/bg_submenu_hover.png) 0 -10px repeat-x; border-top:1px dashed #FEFEFE; }
+#menu .col-1.aktiv a, #menu .col-2.aktiv a, #menu .col-3.aktiv a, #menu .col-4.aktiv a, #menu .col-5.aktiv a, #menu .col-4.aktiv a { color:#FEFEFE; }
+.col-1 { position:absolute; top:0; left:0; padding:0 0 0 10px; }
+.col-2 { position:absolute; top:0; left:163px; padding:0 0 0 10px; }
+.col-3 { position:absolute; top:0; left:326px; padding:0 0 0 10px; }
+.col-4 { position:absolute; top:0; left:489px; padding:0 0 0 10px; }
+.col-5 { position:absolute; top:0; left:662px; padding:0 0 0 10px; }
+.col-6 { position:absolute; top:0; left:825px; padding:0 0 0 10px; }
+.einfahren { position:absolute; top:2px; right:8px; cursor:pointer; background:url(../img/arrow_left.png) no-repeat; width:12px; height:19px; }
+.ausfahren { position:absolute; top:5px; right:8px; cursor:pointer; background:url(../img/arrow_down.png) no-repeat; width:19px; height:12px; }
+
+/* STARTSEITE */
+#teaser { position:relative; width:100%; height:290px; margin:0 0 10px 0; }
+#teaser .headlines { position:absolute; left:0; bottom: 0; width:100%; height: 80px; background:transparent url(../img/teaser_shadow.png) repeat-x bottom left; padding:20px 0 0 0; }
+#teaser a { color:#FFF; text-decoration:none;}
+#teaser h1 { font-weight:bold; font-size:36px; margin:0 0 20px 20px; padding:0; }
+#teaser h2 { font-weight:bold; font-size:24px; margin:0 0 10px 20px; padding:0; }
+.teaser-1, .teaser-2, .teaser-3, .teaser { position:absolute; top:0; left:0; width::705px; display:none; }
+ul#teaser-navi { position:absolute; top:20px; left:20px; z-index:90; }
+ul#teaser-navi li { display:block; float:left; width:20px; height:19px; background:transparent url(../img/bg_teaser_menu.png) repeat-x; margin:0 3px 0 0; text-align:center; padding:2px 0 0; }
+ul#teaser-navi li:hover, ul#teaser-navi li.aktiv { background:#FFF; font-weight:bold; cursor:pointer; }
+ul#teaser-navi a { color:#333; }
+
+/* NEWS */
+#news { position:relative; float:left; width:432px; margin:0 10px 0 0; background:#EFEFEF; }
+#news .newshead { height:23px; padding: 7px 0 0 20px; background:url(../img/bg_menu.png) repeat-x; }
+#news .newshead:hover { height:23px; padding: 7px 0 0 20px; cursor:pointer; }
+#news .newshead a { display:block; width:100%; height:30px; color:#FFF; }
+#news .newshead.aktiv a { text-decoration:none; font-weight:bold; }
+#news .news { margin:0 0 4px 0; }
+
+h3.kategorie { display:block; width:120px; font-size:12px; text-decoration:none; float:left; color:#FEFEFE; }
+.further { position:relative; min-height:77px; display:none; padding: 5px 0 0 20px; background:#FFF; }
+.further img { position:absolute; top:5px; left:20px; width:100px; margin:0 20px 0 0; }
+.furthertext { position:absolute; top:5px; left:140px; }
+.further.aktiv { background:#FFF; border:none; display:block; }
+
+#newselement { width:100%; margin:0 10px 30px 0; position:relative; }
+#newselement p { padding:0 5px 0 0; }
+#author { text-align:right; padding:10px 0 0 0; }
+
+/* BANNER */
+#banner { position:relative; float:left; width:263px; background-color:#EFEFEF; }
+#banner li, #sponsoren li { margin:0 0 5px 0; padding:0; line-height:100%;  }
+#sponsoren { padding:0; margin:0; }
+
+#sponsorenuebersicht li { float:left; display:block; margin:0 10px 10px 0; height:175px; }
+#sponsorenuebersicht li img { width:220px; }
+
+/* RECHTE SPALTE */
+.box { position:relative; margin:0 0 10px 0; background:#F5F5F5; }
+.boxhead { background:#222; color:#FFF; margin:0 0 5px 0; }
+.boxhead h1 { margin: 0; padding: 10px 0 0 10px; display:block; vertical-align: middle; height: 29px; text-transform: uppercase;}
+.boxhead h2 { padding:5px 0 5px 10px; font-weight:normal; font-size:12px; text-transform:uppercase; margin:0; }
+.boxbody { padding:0 0 5px 0; }
+.boxbody form, .boxbody p, .boxbody ul.menu, .boxbody ul, .boxbody h4, .boxbody h3 { margin:0 0 0 10px; }
+.boxbody h3 { margin:0 0 0 10px; font-size:12px; font-weight:normal; }
+.bild { float:left; margin:0 10px 0 10px;  }
+.steckbrief h2 { font-size:13px; margin:0 0 5px 0; }
+.steckbrief span { display:none; }
+/* FORMULARE */
+.textbox { border:1px solid #AAA; border-bottom:1px solid #CCC; margin:0 5px 0 0; padding:2px; background:#FFF; }
+.textbox:hover { border:1px solid #AAA; border-bottom:1px solid #CCC; margin:0 5px 0 0; padding:2px; border:1px solid #999; }
+.button { background:#505050 url(../img/bg_button.png) repeat-x; border: 1px solid #222; padding:1px; width:85px; color:#FFF; }
+.button:hover { border: 1px solid #777; padding:1px; width:85px; }
+
+/* ALLGEMEINE KLASSEN */
+.clear { clear:both; height:0; width:0; }
+
+/* ########## TEAM VIEW ############## */
+
+table#team { width:100%; }
+table#team tr { height:20px; }
+table#team .nr { width:10px; text-align:center; padding:0; }
+table#team .name { width:300px; text-align:left; }
+table#team span { display:none; }
+
+table#coach { width:100%; }
+table#coach tr { height:20px; }
+table#coach .nr { width:10px; text-align:center; padding:0; }
+table#coach .name { width:300px; text-align:left; }
+table#coach span { display:none; }
+
+table#supporter { width:100%; }
+table#supporter tr { height:20px; }
+table#supporter .nr { width:10px; text-align:center; padding:0; }
+table#supporter .name { width:300px; text-align:left; }
+table#supporter span { display:none; }
+
+/* ########## PROFIL VIEW ############ */
+
+table#profil { width:100%; }
+table#profil td { padding:0; }
+table#profil .spielerimage { width:210px; }
+table#profil .prof_head, table#profil .prof_value { padding:0 0 0 5px; }
+table#profil span { display:none; }
+
+
+/* ########## NEWS ################### */
+
+.newshead { background:#AAA; color:#FFF; margin:0 0 5px 0; }
+.newshead h2 { padding:5px 0 5px 10px; font-weight:normal; font-size:12px; text-transform:uppercase; margin:0; }
+#newselement p.caption { background:#EEEEEE none repeat scroll 0 0; font-size:11px; padding:3px; }
+
+/* ########## FUSSBALL.DE ############ */
+
+#widget #fussballdeAPI { width:100%; border:none !important; }
+#widget #fussballdeAPI .fbdeAPItoplogo { background:#1B1B1B url(http://static.fussball.de/fbdeAPI/pix/fbdeAPI_TopLogo.jpg) no-repeat scroll left top; }
+#widget #fussballdeAPI .fbdeAPISuche { position:absolute; left:508px; top:30px; }
+#widget #fussballdeAPI table.edKerntabelle { width:100%; }
+#widget #fussballdeAPI div.SpieltagSuchblock { width:698px; border:none !important; display:none; }
+#widget #fussballdeAPI a { color:#202020; }
+#widget #fussballdeAPI a:hover { text-decoration:underline; }
+#widget #fussballdeAPI iframe { display:none !important; visibility:hidden; }
+#widget #edReiternavigation a.act, 
+#widget #edReiternavigation a.act:hover, 
+#widget #edReiternavigation a.act:link, 
+#widget #edReiternavigation a.act:visited, 
+#widget #edReiternavigation2 a.act, 
+#widget #edReiternavigation2 a.act:hover, 
+#widget #edReiternavigation2 a.act:link, 
+#widget #edReiternavigation2 a.act:visited { background-color:#99FF33; }
+
+#widget #fussballdeAPI th,
+#widget #fussballdeAPI th.edSpiel, 
+#widget #fussballdeAPI th.edHeim, 
+#widget #fussballdeAPI th.edGast, 
+#widget #fussballdeAPI th.edAnstoss, 
+#widget #fussballdeAPI th.edVerlegt,
+#widget #fussballdeAPI th.edTore { color:#EFEFEF; }
+
+
+
+
+
+
+/* ########## LIGHTBOX ############### */
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#fff;}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none;}
+#sb-overlay{position:relative;height:100%;width:100%;}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;border:1px solid #303030;overflow:hidden;height:100px;}
+#sb-body{position:relative;height:100%;}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-body img{border:none;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
+#sb-loading-inner span{background:url(loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-body,#sb-loading{background-color:#060606;}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
+#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
+#sb-nav-close{background-image:url(close.png);}
+#sb-nav-next{background-image:url(next.png);}
+#sb-nav-previous{background-image:url(previous.png);}
+#sb-nav-play{background-image:url(play.png);}
+#sb-nav-pause{background-image:url(pause.png);}
+#sb-counter{float:left;width:45%;}
+#sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
+#sb-counter a.sb-counter-current{text-decoration:underline;}
+div.sb-message{font-size:12px;padding:10px;text-align:center;}
+div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+
+#newsflash { z-index: 9999999;line-height:100%; padding:0px; /* width: 705px; */ left: 80px; top: 30px; display: block; position: fixed; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 4px solid rgb(51, 51, 51);" }
+
+#notify { margin-bottom:1em;}

@@ -403,23 +403,23 @@ page.10 {
 		}
 
 	}
-	subparts.CONTENT >
-	subparts.CONTENT = COA
-	subparts.CONTENT {
-		10 = CONTENT
-		10 {
-			wrap = <div class="teaser-wrap-left">|</div>
-			table = tt_content
-			select {
-				pidInList = 2
-				where =  colPos = 0
-				begin = 0
-				max = 1
-			}
-		}
-		20 < .10
-		20.wrap = <div class="teaser-wrap-right">|</div>
-		20.select.begin = 1
-	}
+#	subparts.CONTENT >
+#	subparts.CONTENT = COA
+#	subparts.CONTENT {
+#		10 = CONTENT
+#		10 {
+#			wrap = <div class="teaser-wrap-left">|</div>
+#			table = tt_content
+#			select {
+#				pidInList = 2
+#				where =  colPos = 0
+#				begin = 0
+#				max = 1
+#			}
+#		}
+#		20 < .10
+#		20.wrap = <div class="teaser-wrap-right">|</div>
+#		20.select.begin = 1
+#	}
 }
 [global]
